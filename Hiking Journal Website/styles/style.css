@@ -1,0 +1,115 @@
+/* Custom CSS for spacing between image and text */
+.navbar-logo {
+    margin-right: 5px; /* Adjust the value to control the spacing */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 700px; /* Ajustează în funcție de necesități */
+    display: block;
+    margin: 0 auto;
+}
+
+.custom-caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+
+.custom-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Adaugă umbră textului */
+}
+
+/* Adaugă spațiere între link-uri */
+.custom-link {
+    margin-right: 30px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-all {
+    display: flex;
+    align-items: center;
+}
+
+.see-all p {
+    margin: 0;
+    font-weight: bold;
+    padding-right: 10px; /* Spațiu între textul "Vezi tot" și săgeată */
+}
+
+.see-all .arrow {
+    font-size: 24px; /* Dimensiunea săgeții */
+    cursor: pointer;
+}
+
+.card {
+    border: none; /* Elimină chenarul */
+    box-shadow: none; /* Elimină umbra */
+}
+
+/* Schimbă săgețile cu iconițe Font Awesome personalizate */
+.carousel-control-prev::before {
+    content: "\f104"; /* Codul pentru o săgeată în stânga din Font Awesome */
+    font-family: "Font Awesome 5 Free"; /* Familia de fonturi Font Awesome */
+    font-weight: 900; /* Grosimea fontului */
+    color: white; /* Culoarea săgeților */
+    font-size: 36px; /* Dimensiunea săgeților */
+}
+
+.carousel-control-next::before {
+    content: "\f105"; /* Codul pentru o săgeată în dreapta din Font Awesome */
+    font-family: "Font Awesome 5 Free"; /* Familia de fonturi Font Awesome */
+    font-weight: 900; /* Grosimea fontului */
+    color: white; /* Culoarea săgeților */
+    font-size: 36px; /* Dimensiunea săgeților */
+}
+
+/* Stilizare pentru săgețile caruselului */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Ajustați dimensiunile după preferințe */
+    height: 50px; /* Ajustați dimensiunile după preferințe */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal pentru săgeți */
+    border-radius: 50%;
+    color: white; /* Culoarea săgeților */
+    font-size: 24px; /* Dimensiunea săgeților */
+    text-align: center;
+    line-height: 50px; /* Asigurați-vă că săgețile sunt centrate vertical */
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: 10px; /* Poziția săgeții stângi */
+}
+
+.carousel-control-next {
+    right: 10px; /* Poziția săgeții drepte */
+}
+
+
+/* Ascunde săgețile implicite Bootstrap */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
