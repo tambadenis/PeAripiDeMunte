@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jurnal Montan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex align-items-center" href="#"><img src="favicon-32x32.png" alt="Logo" class="navbar-logo">Jurnalul Meu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Acasă</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Trasee pe munte
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Traseu 1</a></li>
+                      <li><a class="dropdown-item" href="#">Traseu 2</a></li>
+                      <li><a class="dropdown-item" href="#">Traseu 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Despre mine</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recomandări de cazări</a>
+                  </li>
+                </ul>
+              </div>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Caută" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Caută</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section id="recent-articles" class="py-4">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Secțiunea cu Articole</h2>
+                    <div class="see-all">
+                        <p>Vezi tot</p>
+                        <span class="arrow">&#9658;</span>
+                    </div>
+                </div>        
+                <div id="trailCarouselRecent" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                    <div class="carousel-inner">
+                        <a href="link_catre_articol" class="text-decoration-none">
+                            <div class="carousel-item">
+                                <img src="varfulmoldoveanu.jpg" class="d-block w-100" alt="...">
+                                <div class="d-none d-md-block custom-caption">
+                                    <h3 class="custom-heading">Clasic de Făgăraș - Vârful Moldoveanu prin Valea Rea</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="link_catre_articol" class="text-decoration-none">
+                            <div class="carousel-item active">
+                                <img src="laculcuejdel.jpg" class="d-block w-100" alt="...">
+                                <div class="d-none d-md-block custom-caption">
+                                    <h3 class="custom-heading">Lacul Cuejdel - cel mai tânăr lac de baraj natural din România</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="link_catre_articol" class="text-decoration-none">
+                            <div class="carousel-item">
+                                <img src="varfulomu.jpg" class="d-block w-100" alt="...">
+                                <div class="d-none d-md-block custom-caption">
+                                    <h3 class="custom-heading">Traseu Vârful Omu - pe cel mai scurt drum</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Adăugați săgeți pentru a permite navigarea manuală -->
+                    <a class="carousel-control-prev" href="#trailCarouselRecent" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#trailCarouselRecent" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" ariahidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>    
+        </section>
+        <section id="mountain-trails" class="py-4">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trasee pe munte</h2>
+                    <div class="see-all">
+                        <p>Vezi tot</p>
+                        <span class="arrow">&#9658;</span>
+                    </div>
+                </div>
+                <div id="trailCarouselMountains" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="dealulcarlomanu.jpg" class="card-img-top" alt="Article 2 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dealul Cârlomanu, Vf. Bobeica, Vf. Prihodiștea; Septembrie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="canionul7scari.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Canionul 7 Scări, Brașov; Septembrie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="varfultampa.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vârful Tâmpa, Brașov; Septembrie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="coloaneledebalzalt.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Coloanele de Balzalt; Septembrie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="vulcanulstins.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vulcanul Stins de la Racoș; Septembrie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="laculdesmarald.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lacul de Smarald; Septembrie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="cascadanasoleamare.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cascada Nasolea Mare, Bacău; Septembrie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="cascadaduras.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cascada Duras, Roznov; August 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="cabanamalaesti.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Râșnov - Cabana Mălăești; August 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="laculvulturilor.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lacul Vulturilor, Buzău; Iulie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="babeledelaulmet.jpg" class="card-img-top" alt="Article 1 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Babele de la Ulmet; Buzău; Iulie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="capelasuhard2.jpg" class="card-img-top" alt="Article 3 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Capela Șuhard, Luizi Călugăra; Septembrie 2023</h5>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Alte card-uri aici... -->
+                    </div>
+                    <!-- Adăugați săgeți pentru a permite navigarea manuală -->
+                    <a class="carousel-control-prev" href="#trailCarouselMountains" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#trailCarouselMountains" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" ariahidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>        
+        <section id="special-places" class="py-4">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Cazări deosebite</h2>
+                    <div class="see-all">
+                        <p>Vezi tot</p>
+                        <span class="arrow">&#9658;</span>
+                    </div>
+                </div>
+                <div id="trailCarouselPlaces" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://aventurescu.ro/wp-content/uploads/2021/02/79896145_110660327090047_2206037516966952960_n.jpg" class="card-img-top" alt="Article 1 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Articol 1</h5>
+                                            <p class="card-text">Descriere pentru articolul 1.</p>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://calatorinbascheti.ro/wp-content/uploads/2019/03/777.jpg" class="card-img-top" alt="Article 1 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Articol 1</h5>
+                                            <p class="card-text">Descriere pentru articolul 1.</p>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="https://www.alohotels.ro/~uploads/images/cazari%20frumoase%20romania.jpeg.jpeg" class="card-img-top" alt="Article 1 Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Articol 1</h5>
+                                            <p class="card-text">Descriere pentru articolul 1.</p>
+                                            <a href="#" class="btn btn-primary">Citește mai mult</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Adăugați săgeți pentru a permite navigarea manuală -->
+                     <a class="carousel-control-prev" href="#trailCarouselPlaces" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#trailCarouselPlaces" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" ariahidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="follow-us" class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Urmărește-ne</h2>
+                                <a href="#" class="text-dark custom-link">
+                                    <i class="fab fa-facebook-f"></i> Facebook
+                                </a>
+                                <a href="#" class="text-dark custom-link">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                                <a href="#" class="text-dark custom-link">
+                                    <i class="fab fa-youtube"></i> YouTube
+                                </a>
+                                <a href="#" class="text-dark custom-link">
+                                    <i class="fab fa-tiktok"></i> TikTok
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Publicitate & Sponsorizări</h2>
+                                <p>Contact us at: <a href="mailto:your@email.com">your@email.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>    
+    <footer class="mt-auto bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Despre Noi</h3>
+                    <p>Descriere scurtă a site-ului și a proiectului tău de jurnal montan.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Contact</h3>
+                    <p>Email: contact@jurnalmeu.com</p>
+                    <p>Telefon: +123 456 789</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
