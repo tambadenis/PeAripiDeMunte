@@ -1,6 +1,6 @@
-/* Custom CSS for spacing between image and text */
+/* CSS personalizat pentru spațierea dintre imagine și text */
 .navbar-logo {
-    margin-right: 5px; /* Adjust the value to control the spacing */
+    margin-right: 5px; /* Ajustează valoarea pentru a controla spațiul */
 }
 
 .carousel-item img {
