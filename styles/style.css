@@ -1,3 +1,9 @@
+/* Adaugă spațiu între butonul "Trimite" și footer */
+main {
+    margin-bottom: 2rem;
+    /* Ajustează valoarea pentru spațierea dorită */
+}
+
 /* CSS personalizat pentru spațierea dintre imagine și text */
 .navbar-logo {
     margin-right: 0.3125rem;
