@@ -1,14 +1,14 @@
-# Hiking Journal Website
+# Pe Aripi De Munte
 
 ## Description
 
-Hiking Journal Website is a web project created to share and document your experiences in mountain hikes. The site provides articles about various mountain trails, accommodation recommendations, and information about the author. It was developed using HTML, CSS, and Bootstrap.
+Pe Aripi De Munte is a web project created to share and document your experiences in mountain hikes. The site provides articles about various mountain trails, accommodation recommendations, and information about the author. It was developed using HTML, CSS, and Bootstrap.
 
 ## Installation
 
 1. Clone this repository to your local machine.
     ```bash
-    git clone https://github.com/username/HikingJournalWebsite.git
+    git clone https://github.com/username/PeAripiDeMunte.git
     ```
 
 2. Open the `index.html` file in a web browser.
