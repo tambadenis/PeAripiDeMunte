@@ -27,9 +27,9 @@
 </head>
 <body class="bg-light">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-dark custom-header-bg">
             <div class="container-fluid">
-              <a class="navbar-brand d-flex align-items-center" href="/"><img src="images/favicon-16x16.webp" alt="Logo" class="navbar-logo">Pe Aripi De Munte</a>
+              <a class="navbar-brand d-flex align-items-center custom-navbar-brand" href="/"><img src="images/favicon-16x16.webp" alt="Logo" class="navbar-logo">Pe Aripi De Munte</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -67,57 +67,20 @@
           </nav>
     </header>
     <main>
-        <section id="recent-articles" class="py-4">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Secțiunea cu Articole</h2>
-                    <div class="see-all">
-                        <p>Vezi tot</p>
-                        <span class="arrow">&#9658;</span>
-                    </div>
-                </div>        
-                <div id="trailCarouselRecent" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
-                    <div class="carousel-inner">
-                        <a href="#" class="text-decoration-none">
-                            <div class="carousel-item">
-                                <img src="images/varfulmoldoveanu.webp" class="d-block w-100" alt="...">
-                                <div class="d-md-block custom-caption">
-                                    <h3 class="custom-heading">Clasic de Făgăraș - Vârful Moldoveanu prin Valea Rea</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none">
-                            <div class="carousel-item active">
-                                <img src="images/laculcuejdel.webp" class="d-block w-100" alt="...">
-                                <div class="d-md-block custom-caption">
-                                    <h3 class="custom-heading">Lacul Cuejdel - cel mai tânăr lac de baraj natural din România</h3>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="text-decoration-none">
-                            <div class="carousel-item">
-                                <img src="images/varfulomu-min.webp" class="d-block w-100" alt="...">
-                                <div class="d-md-block custom-caption">
-                                    <h3 class="custom-heading">Traseu Vârful Omu - pe cel mai scurt drum</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <a class="carousel-control-prev" href="#trailCarouselRecent" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#trailCarouselRecent" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" ariahidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </a>
+        <section id="about-me" class="py-4">
+            <div class="container mt-5 about-section">
+                <div class="card p-4 text-center">
+                    <img src="/images/poza-mea.jpg" alt="Poza ta" class="img-fluid rounded-circle mx-auto d-block mb-3" style="width: 150px;">
+                        <h2>Despre Mine</h2>
+                        <p>Salut, sunt Tamba Denis Valentin, un pasionat de munte în vârstă de 24 de ani, originar din Bacău. Student la
+                            Informatică, muntele este locul meu preferat, iar traseele reprezintă aventurile care îmi definesc călătoria.</p>
+                        <p>"Pe Aripi De Munte" este spațiul în care împărtășesc experiențe, sfaturi și povestiri din lumea traseelor montane.
+                            Hai să descoperim împreună frumusețea și autenticitatea naturii.</p>
+                        <p>Alătură-te mie în această călătorie virtuală și să explorăm împreună înălțimile mărețe ale muntelui!</p>
+                        <p>Aventuri fericite,</p>
+                        <p>Tamba Denis Valentin</p>
                 </div>
-            </div>    
+            </div>
         </section>
         <section id="mountain-trails" class="py-4">
             <div class="container">
@@ -681,20 +644,12 @@
     <footer class="mt-auto bg-dark text-light py-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h3>Despre Mine</h3>
-                    <p>Salut, sunt Tamba Denis Valentin, un pasionat de munte în vârstă de 24 de ani, originar din Bacău. Student la
-                        Informatică, muntele este locul meu preferat, iar traseele reprezintă aventurile care îmi definesc călătoria.</p>
-                    <p>"Pe Aripi De Munte" este spațiul în care împărtășesc experiențe, sfaturi și povestiri din lumea traseelor montane.
-                        Hai să descoperim împreună frumusețea și autenticitatea naturii.</p>
-                    <p>Alătură-te mie în această călătorie virtuală și să explorăm împreună înălțimile mărețe ale muntelui!</p>
-                    <p>Aventuri fericite,</p>
-                    <p>Tamba Denis Valentin</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Contact</h3>
-                    <p>Email: <a href="mailto:tambadenis99@gmail.com">tambadenis99@gmail.com</a></p>
-                    <p>Telefon: <a href="tel:0737387402">0737387402</a></p>
+                <div class="col-md-12 text-center">
+                    <span style="color:#858585">©2023-2024</span>
+                    <a href="https://bloguldecalatorii.ro">
+                        <span style="color:#d8d8d8">PeAripiDeMunte.live</span>
+                    </a>
+                    <span style="color:#858585">Toate drepturile rezervate</span>
                 </div>
             </div>
         </div>

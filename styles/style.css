@@ -1,3 +1,28 @@
+.custom-navbar-brand {
+    color: #d8d8d8 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #d8d8d8 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about-section {
+    text-align: center;
+}
+
+.about-section img {
+    width: 150px;
+    /* Ajustează dimensiunea imaginii după nevoie */
+    border-radius: 50%;
+    /* Face imaginea în formă de cerc */
+    margin-bottom: 20px;
+    /* Adaugă spațiu între imagine și text */
+}
+
 /* Adaugă spațiu între butonul "Trimite" și footer */
 main {
     margin-bottom: 2rem;
@@ -44,12 +69,6 @@ main {
 /* Adaugă spațiere între link-uri */
 .custom-link {
     margin-right: 1.875rem;
-}
-
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .see-all {
