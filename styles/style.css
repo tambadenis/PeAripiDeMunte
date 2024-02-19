@@ -1,5 +1,15 @@
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-dark .navbar-toggler-icon::before {
+    background-color: #d8d8d8;
+    /* Setează culoarea liniilor butonului la alb */
+}
+
 .custom-navbar-brand {
-    color: #d8d8d8 !important;
+    color: #d8d8d8;
 }
 
 .navbar-nav .nav-link {
