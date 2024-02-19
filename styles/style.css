@@ -12,8 +12,10 @@
     color: #d8d8d8;
 }
 
-.navbar-nav .nav-link {
-    color: #d8d8d8 !important;
+/* Stil pentru toate link-urile din bara de navigație */
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active {
+    color: #d8d8d8;
 }
 
 a {
