@@ -15,8 +15,11 @@ a {
 }
 
 .about-section img {
-    width: 150px;
-    /* Ajustează dimensiunea imaginii după nevoie */
+    width: 250px;
+    height: 250px;
+    /* Asigură-te că imaginea este un pătrat */
+    object-fit: cover;
+    /* Menține proporțiile și acoperă întreaga zonă */
     border-radius: 50%;
     /* Face imaginea în formă de cerc */
     margin-bottom: 20px;
