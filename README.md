@@ -2,7 +2,7 @@
 
 ## Description
 
-Pe Aripi De Munte is a web project created to share and document your experiences in mountain hikes. The site provides articles about various mountain trails, accommodation recommendations, and information about the author. It was developed using HTML, CSS, and Bootstrap.
+Pe Aripi De Munte is a web project created to share and document my experiences in mountain hikes. The site provides articles about various mountain trails, accommodation recommendations, and informations about me. It was developed using HTML, CSS, and Bootstrap.
 
 ## Installation
 
