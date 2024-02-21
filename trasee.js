@@ -1,38 +1,24 @@
 function adaugaCardTraseu(imagine, descriere, data) {
     // Accesează containerul pentru carduri
-    var carouselInner = document.getElementById('carouselInner');
+    var cardContainer = document.getElementById('cardContainer');
 
-    if (carouselInner.children.length === 0 || 
-    (carouselInner.lastElementChild && 
-     carouselInner.lastElementChild.classList.contains('carousel-item') &&
-     carouselInner.lastElementChild.querySelector('.row') &&
-     carouselInner.lastElementChild.querySelector('.row').children.length === 6)) {
-    
-        // Creează un nou carousel-item
-        var newCarouselItem = document.createElement('div');
-        newCarouselItem.className = 'carousel-item';
-
-        // Creează un nou row în cadrul carousel-item-ului
+    // Verifică dacă există deja un rând, altfel creează unul
+    var currentRow = cardContainer.lastElementChild;
+    if (!currentRow || (currentRow && currentRow.children.length === 3)) {
+        // Creează un nou rând (row) în containerul cardurilor
         var newRow = document.createElement('div');
         newRow.className = 'row';
 
-        // Adaugă noul row la noul carousel-item
-        newCarouselItem.appendChild(newRow);
+        // Adaugă noul rând la containerul cardurilor
+        cardContainer.appendChild(newRow);
 
-        // Adaugă noul carousel-item la carusel
-        carouselInner.appendChild(newCarouselItem);
-
-        // Dacă este primul carousel-item, activează-l
-        if (carouselInner.children.length === 1) {
-            newCarouselItem.classList.add('active');
-        }
+        // Actualizează referința la rândul curent
+        currentRow = newRow;
     }
-    // Accesează ultimul carousel-item adăugat
-    var lastCarouselItem = carouselInner.lastElementChild;
 
-    // Creează elementul pentru col-md-2
-    var colMd2 = document.createElement('div');
-    colMd2.className = 'col-md-2';
+    // Creează elementul pentru col-md-4
+    var colMd4 = document.createElement('div');
+    colMd4.className = 'col-md-4 mb-4';
 
     // Creează elementele cardului
     var card = document.createElement('div');
@@ -70,16 +56,11 @@ function adaugaCardTraseu(imagine, descriere, data) {
     cardBody.appendChild(title);
     cardBody.appendChild(link);
 
-    colMd2.appendChild(card);
+    colMd4.appendChild(card);
 
-    // Adaugă col-md-2 în rândul curent
-    lastCarouselItem.firstElementChild.appendChild(colMd2);
+    // Adaugă col-md-4 în rândul curent
+    currentRow.appendChild(colMd4);
 }
-
-document.getElementById('seeAllLink').addEventListener('click', function() {
-    // Redirecționează utilizatorul către pagina cu toate traseele
-    window.location.href = 'trasee.html'; // Schimbă cu numele real al paginii
-});
 
 adaugaCardTraseu('images/piatra_singuratica_17_02_2024.webp', 'Piatra Singuratică & Vârful Hăsmașu Mare', '17 Februarie 2024');
 adaugaCardTraseu('images/vf_batrana_06_01_2024.webp', 'Vârful Bătrâna', '6 Ianuarie 2024');
