@@ -168,3 +168,18 @@ main {
 .carousel-control-next-icon {
     display: none;
 }
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    /* Ajustează spațiul între carduri după preferință */
+    overflow-x: hidden;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    /* Asigură că cardurile nu depășesc lățimea maximă */
+}
